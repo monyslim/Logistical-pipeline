@@ -1,0 +1,12 @@
+name: Deployment Workflow
+on:
+    push:
+      branches:
+        - master
+
+jobs:
+    pusher:
+        runs-on: ubuntu-latest
+        steps:
+            - name: pusher
+              run: echo "Push the code"
