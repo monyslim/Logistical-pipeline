@@ -1,4 +1,4 @@
-name: "Continuous Deploy"
+name: "Continuous Create Deploy"
 on:
     workflow_run:
         workflows: ["Deployment Workflow"]
@@ -8,7 +8,7 @@ jobs:
     fetch_and_start_the_app:
         runs-on: self-hosted
         steps:
-            - name: "Remove conatiner logis"
+            - name: "Remove container logis"
               run: "sudo docker rm -f logis || true"
             
             - name: "Get the code from Docker Hub"
