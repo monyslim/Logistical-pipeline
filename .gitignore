@@ -1,1 +1,8 @@
 *Jenkinsfile
+roller.tf
+logis-satclass-pair
+logis-satclass-pair.pub
+.terraform.lock.hcl
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
