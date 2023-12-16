@@ -8,11 +8,11 @@ jobs:
     fetch_and_start_the_app:
         runs-on: self-hosted
         steps:
-            - name: "Remove container logisis"
-              run: "sudo docker rm -f logisis || true"
+            - name: "Remove container logis"
+              run: "sudo docker rm -f logis || true"
             
             - name: "Get the code from Docker Hub"
-              run: "sudo docker pull monyslim/logis2:newest"
+              run: "sudo docker pull monyslim/logis1:newest"
             
             - name: "Run the image as a container"
-              run: "sudo docker run -d -p 80:80 --name logisis monyslim/logis1:newest"
+              run: "sudo docker run -d -p 80:80 --name logis monyslim/logis1:newest"
